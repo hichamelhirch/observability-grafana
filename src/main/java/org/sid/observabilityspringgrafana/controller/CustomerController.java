@@ -37,4 +37,9 @@ public class CustomerController {
                 .retrieve()
                 .body(new ParameterizedTypeReference<List<Post>>() {});
     }
+
+    @GetMapping
+    public String msg(){
+        return "Welcome";
+    }
 }
